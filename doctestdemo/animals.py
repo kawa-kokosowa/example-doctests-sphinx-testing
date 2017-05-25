@@ -51,7 +51,7 @@ class Animal:
         Example:
             >>> lion = Animal('roar')
             >>> lion.list_of_noises(20)  # doctest: +ELLIPSIS
-            ['roar', 'roar', roar', ..., 'roar']
+            ['roar', 'roar', 'roar', ..., 'roar']
 
         """
 
