@@ -37,6 +37,11 @@ echo 'source /home/lily/.local/bin/virtualenvwrapper.sh' >> ~/.bashrc
 . ~/.bashrc
 mkvirtualenv doctest-demo -p python3
 
+```
+
+### Configure Sphinx
+
+```shell
 # Now that we're in our virtual environment let's install the rest of
 # the tools we'll need...
 pip install sphinx pytest sphinxcontrib-napoleon
@@ -56,8 +61,6 @@ pip install sphinx pytest sphinxcontrib-napoleon
 sphinx-quickstart
 ```
 
-### Configure Sphinx
-
 Edit `docs/source/conf.py` and find the python list `extensions`, add
 `'sphinxcontrib.napoleon',` to it. This is because we're going to use Google Style
 Docstrings, instead of the default ugly/illegible docstring code formatting.
@@ -66,9 +69,11 @@ Edit `docs/source/conf.py` again to add the package directory we're testing to
 sphinx (you can comment-out these lines in config, but you have to edit the path:
 
 ```python
+# These three lines below I uncommented.
+# Also, I modified the last line to insert ../.. to PATH.
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../..')  # lily's edit: root of repository
+sys.path.insert(0, os.path.abspath('../..'))
 ```
 
 Make a file called `docs/source/index.rst`:
@@ -117,11 +122,35 @@ Here's what an `Animal` looks like:
 
 ```
 
-Excellent!
-
-
-### uh
-
-make html
+Excellent! You should be able to make your docs with `make html` and view them
+by opening `docs/build`.
 
 ### Unit Tests, py.test doctests
+
+Run all the tests like this:
+
+`py.test tests --doctest-modules doctestdemo`
+
+You can actually make a `py.test` configuration file:
+
+```
+# content of pytest.ini
+[pytest]
+addopts = --doctest-modules
+doctest_optionflags = ELLIPSIS
+```
+
+### In closing
+
+Now you have docs in two places: in the code itself and in your nice web docs,
+plus you now have more unit tests! Whoah!
+
+Some goodies to improve any project:
+
+  * [`typing`: support for type hints](https://docs.python.org/3/library/typing.html)
+  * Code Climate
+  * Travis CI
+  * `pytest-pep8`
+  * Code coverage! I love `pytest-cov` + `python-coveralls`,
+    [coveralls.io](coveralls.io).
+
