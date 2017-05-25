@@ -58,7 +58,7 @@ class Animal:
         return [self.sound for i in range(number_of_times)]
 
 
-class Cat:
+class Cat(Animal):
     """Cat animal docstring!"""
 
     def __init__(self):
@@ -70,7 +70,7 @@ class Cat:
             <function <lambda> at 0x...>
 
         """
-        super(Cat).__init__('meow')
+        super().__init__('meow')
 
     def pet(self):
         """If you pet the cat it purrrrs, where the number of 'r's is
@@ -85,7 +85,7 @@ class Cat:
 
         """
 
-        print('pur' + ('r' * randint(1, 6)))
+        print('pur' + ('r' * random.randint(1, 6)))
    
 
 def random_animal_sound():
