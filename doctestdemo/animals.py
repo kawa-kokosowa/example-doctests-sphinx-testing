@@ -73,9 +73,20 @@ class Cat:
         super(Cat).__init__('meow')
 
     def pet(self):
-        """If you pet the cat it purrs!"""
-        print("purrrrr")
+        """If you pet the cat it purrrrs, where the number of 'r's is
+        between 2 and 6 (random).
 
+        Example:
+            >>> cat = Cat()
+            >>> cat.pet()  # doctest: +SKIP
+            purrrr
+            >>> cat.pet()  # doctest: ELLIPSIS
+            purr...
+
+        """
+
+        print('pur' + ('r' * randint(1, 6)))
+   
 
 def random_animal_sound():
     """Use this to produce a random animal sound!

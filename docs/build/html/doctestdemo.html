@@ -46,7 +46,7 @@
 <span class="target" id="module-doctestdemo.animals"></span><p>This be the animal docstring at module level</p>
 <div class="section" id="animal-overview">
 <h2>Animal overview<a class="headerlink" href="#animal-overview" title="Permalink to this headline">¶</a></h2>
-<p>An <a class="reference internal" href="#doctestdemo.animals.Animal" title="doctestdemo.animals.Animal"><code class="xref py py-class docutils literal"><span class="pre">Animal</span></code></a> is a base class that all animals, such as <code class="xref py py-class docutils literal"><span class="pre">Cat</span></code> and
+<p>An <a class="reference internal" href="#doctestdemo.animals.Animal" title="doctestdemo.animals.Animal"><code class="xref py py-class docutils literal"><span class="pre">Animal</span></code></a> is a base class that all animals, such as <a class="reference internal" href="#doctestdemo.animals.Cat" title="doctestdemo.animals.Cat"><code class="xref py py-class docutils literal"><span class="pre">Cat</span></code></a> and
 <code class="xref py py-class docutils literal"><span class="pre">Dog</span></code> inherit from.</p>
 <p>Here’s what an <cite>Animal</cite> looks like:</p>
 <dl class="class">
@@ -58,12 +58,29 @@
 <span class="gp">... </span>    <span class="k">def</span> <span class="nf">fetch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">throw_this</span><span class="p">):</span>
 <span class="gp">... </span>        <span class="k">return</span> <span class="n">throw_this</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">&#39;awoo&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">dog</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="mi">44</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dog</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="mi">44</span><span class="p">)</span>  <span class="c1"># Ha, ha! Get it?</span>
 <span class="go">44</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">dog</span><span class="o">.</span><span class="n">makes</span><span class="p">()</span>
-<span class="go">&#39;awoo&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dog</span><span class="o">.</span><span class="n">goes</span><span class="p">()</span>
+<span class="go">The dog goes &quot;awoo!&quot;</span>
 </pre></div>
 </div>
+</dd></dl>
+
+<dl class="class">
+<dt id="doctestdemo.animals.Cat">
+<em class="property">class </em><code class="descclassname">doctestdemo.animals.</code><code class="descname">Cat</code><a class="headerlink" href="#doctestdemo.animals.Cat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cat animal docstring!</p>
+<dl class="method">
+<dt id="doctestdemo.animals.Cat.pet">
+<code class="descname">pet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#doctestdemo.animals.Cat.pet" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Some function description.</p>
+<p class="rubric">Example</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span>  
+<span class="go">&lt;function &lt;lambda&gt; at 0x...&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
 </dd></dl>
 
 </div>

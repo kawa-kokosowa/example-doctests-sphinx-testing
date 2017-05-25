@@ -14,4 +14,7 @@ An :class:`Animal` is a base class that all animals, such as :class:`Cat` and
 Here's what an `Animal` looks like:
 
 .. autoclass:: Animal
+  :members:
 
+.. autoclass:: Cat
+   :members:

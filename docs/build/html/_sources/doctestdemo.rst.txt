@@ -15,3 +15,5 @@ Here's what an `Animal` looks like:
 
 .. autoclass:: Animal
 
+.. autoclass:: Cat
+   :members:

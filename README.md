@@ -153,4 +153,5 @@ Some goodies to improve any project:
   * `pytest-pep8`
   * Code coverage! I love `pytest-cov` + `python-coveralls`,
     [coveralls.io](coveralls.io).
+  * [Be sure to read the Sphinx `autodoc` page!](http://www.sphinx-doc.org/en/stable/ext/autodoc.html)
 
