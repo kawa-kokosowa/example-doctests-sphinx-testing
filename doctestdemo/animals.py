@@ -62,14 +62,6 @@ class Cat(Animal):
     """Cat animal docstring!"""
 
     def __init__(self):
-        # FIXME: this put here to point out bug
-        """"Some function description.
-
-        Example:
-            >>> lambda x: x  # doctest: +ELLIPSIS
-            <function <lambda> at 0x...>
-
-        """
         super().__init__('meow')
 
     def pet(self):
