@@ -66,7 +66,7 @@ class Cat:
         """"Some function description.
 
         Example:
-            >>> lambda x: x  # doctest: ELLIPSIS
+            >>> lambda x: x  # doctest: +ELLIPSIS
             <function <lambda> at 0x...>
 
         """
@@ -80,7 +80,7 @@ class Cat:
             >>> cat = Cat()
             >>> cat.pet()  # doctest: +SKIP
             purrrr
-            >>> cat.pet()  # doctest: ELLIPSIS
+            >>> cat.pet()  # doctest: +ELLIPSIS
             purr...
 
         """
