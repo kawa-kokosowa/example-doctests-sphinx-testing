@@ -154,4 +154,5 @@ Some goodies to improve any project:
   * Code coverage! I love `pytest-cov` + `python-coveralls`,
     [coveralls.io](coveralls.io).
   * [Be sure to read the Sphinx `autodoc` page!](http://www.sphinx-doc.org/en/stable/ext/autodoc.html)
+  * [Be sure to also read the pytest doctest integrations page](https://docs.pytest.org/en/latest/doctest.html)
 
